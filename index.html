@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+
+<body class="bg-[rgba(26,11,46,1)] ">
+    <header>
+
+        <nav class="  w-[100%] max-w-[1140px] mx-auto flex items-center justify-between p-5 relative">
+
+            <!-- Logo -->
+            <div class="flex gap-0 font-bold text-2xl md:text-4xl">
+
+                <span class="text-white">Tech</span>
+                <span class="text-[rgba(251,9,180,1)]">Wave</span>
+            </div>
+
+
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center gap-[51px]">
+                <li><a href="#" class="text-sm text-white hover:text-gray-600">About</a></li>
+                <li><a href="#" class="text-sm text-white hover:text-gray-600">Episodes</a></li>
+                <li><a href="#" class="text-sm text-white hover:text-gray-600">Host</a></li>
+            </ul>
+
+            <!-- Desktop Button -->
+            <div class="hidden md:block">
+                <button class="px-6 py-3 rounded-full
+                             bg-[linear-gradient(47.64deg,_rgba(247,233,63,1),_rgba(251,9,180,1),_rgba(145,0,248,1))]
+                             text-white font-medium">
+                    Subscribe
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <!-- Hamburger Image -->
+            <label for="menu-toggle" class="md:hidden cursor-pointer">
+                <img src="assets/hamburger-menu.png" alt="Menu" class="w-6 h-6">
+            </label>
+
+            <!-- Mobile Menu -->
+            <div class="fixed top-[72px] left-0 max-w-xl z-50
+              hidden peer-checked:block md:hidden bg-white shadow-md">
+                <ul class="flex flex-col items-center gap-6 py-6">
+                    <li><a href="#" class="text-sm text-black">About</a></li>
+                    <li><a href="#" class="text-sm text-black">Episodes</a></li>
+                    <li><a href="#" class="text-sm text-black">Host</a></li>
+                    <li>
+                        <button
+                            class="bg-[linear-gradient(47.64deg,_rgba(247,233,63,1),_rgba(251,9,180,1),_rgba(145,0,248,1))] text-white px-6 py-2 rounded-md text-sm">
+                            Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+        <div class="w-full min-h-[600px]
+         bg-[url('assets/hero-bg.png')] bg-cover bg-center bg-no-repeat
+         flex flex-col items-center justify-center p-6 md:p-24">
+
+            <!-- Image Wrapper -->
+            <div class="relative inline-block ">
+
+                <!-- Main Circle -->
+                <img src="assets/hero-circle.png" alt="Main Circle" class=" md:w-[300px]">
+
+                <!-- Inner Image -->
+                <img src="assets/microphone.png" alt="Microphone" class="absolute top-1/2 left-1/2 w-[70px] md:w-[100px]
+                -translate-x-1/2 -translate-y-1/2">
+
+                <!-- Floating Button -->
+                <button class="absolute top-[5%] left-[74%] px-3 py-1 text-sm bg-green-600 text-white rounded-full">
+                    new
+                </button>
+            </div>
+
+            <!-- Banner Content -->
+            <div class="text-center  mt-8 max-w-xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white">
+                    TechWave
+                </h1>
+
+                <p class="text-sm md:text-base text-white/80 mt-3">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex justify-center gap-4 mt-6 flex-wrap">
+                    <button class="px-2 flex items-center justify-center gap-1 md:px-6 py-2  bg-[linear-gradient(47.64deg,_rgba(247,233,63,1),_rgba(251,9,180,1),_rgba(145,0,248,1))] text-white rounded-full
+                         transition-all duration-300  hover:translate-y-5 active:translate-y-3  ">
+                        <img src="assets/spotify.png" class="h-3" alt="">
+                        Listen on Spotify
+                    </button>
+
+                    <button class="px-2 md:px-6 py-2 flex items-center gap-1 rounded-full
+                     border border-green-500 text-green-500 transition-all duration-300 hover:bg-green-600 hover:text-white hover:translate-x-5
+                     active:translate-x-3 active:bg-green-600 active:text-white">
+                        <img src="assets/message.png" class="h-3" alt="">
+                        Subscribe
+
+                    </button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class=" w-[100%] max-w-[1140px] mx-auto">
+
+
+
+    </main>
+
+   
+
+
+
+</body>
+
+</html>
